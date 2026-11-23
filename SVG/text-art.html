@@ -1,1 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Don't judge a book by its cover</title>
+  <style>
+    body { margin: 0; background: white; }
+    svg { display: block; max-width: 100%; height: auto; margin: auto; }
+    text { font-family: Georgia, serif; fill: #222; }
+    .edge { font-size: 20px; }
+    .page { font-size: 30px; }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="900" height="780" viewBox="0 0 900 780"
+       role="img" aria-labelledby="title description">
+    <title id="title">Don't judge a book by its cover.</title>
+    <desc id="description">The words of the saying form the pages, edges and spine of an open book.</desc>
 
+    <defs>
+      <path id="left" d="M 108 264 Q 282 224 432 304" />
+      <path id="right" d="M 468 304 Q 618 224 792 264" />
+      <path id="left-edge" d="M 99 507 V 281" />
+      <path id="fold" d="M 450 540 V 314" />
+      <path id="right-edge" d="M 802 280 V 506" />
+    </defs>
+
+    <g class="edge">
+      <text><textPath href="#left" textLength="330">Don't judge a book by its cover.</textPath></text>
+      <text><textPath href="#right" textLength="330">Don't judge a book by its cover.</textPath></text>
+      <text><textPath href="#left-edge" textLength="221">Don't judge a book</textPath></text>
+      <text><textPath href="#fold" textLength="221">by its cover.</textPath></text>
+      <text><textPath href="#right-edge" textLength="221">by its cover.</textPath></text>
+    </g>
+
+    <g class="page" text-anchor="middle">
+      <text transform="translate(0 79)"><textPath href="#left" startOffset="50%">Don't judge</textPath></text>
+      <text transform="translate(0 79)"><textPath href="#right" startOffset="50%">by its</textPath></text>
+      <text transform="translate(0 155)" font-size="46"><textPath href="#left" startOffset="50%">a book</textPath></text>
+      <text transform="translate(0 155)" font-size="46"><textPath href="#right" startOffset="50%">cover.</textPath></text>
+    </g>
+
+    <g class="edge" transform="translate(0 260)">
+      <text><textPath href="#left" textLength="330">Don't judge a book by its cover.</textPath></text>
+      <text><textPath href="#right" textLength="330">Don't judge a book by its cover.</textPath></text>
+    </g>
+  </svg>
+</body>
+</html>
